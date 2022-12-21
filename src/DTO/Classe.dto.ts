@@ -1,16 +1,17 @@
-import {idText} from "typescript";
-
 class ClasseDto {
-  private _id: String;
-  private _nom: String;
-  private _elevelList: String[];
-  private _salleList: String[];
+  id: string = "";
+  nom: string = "";
+  elevesList: string[] = [""];
+  //professeursList: string[] = [""];
+  sallesList: string[] = [""];
 
-  constructor(id: String, nom: String, eleveList: String[], salleList: String[]) {
+  /*  
+    constructor(id: String, nom: String, elevesList: String[], professeursList: string[], sallesList: String[]) {
     this._id = id;
     this._nom = nom;
-    this._elevelList = eleveList;
-    this._salleList = salleList;
+    this._elevesList = elevesList;
+    this._professeursList = professeursList;
+    this._sallesList = sallesList;
   }
 
   public get id() {
@@ -21,12 +22,16 @@ class ClasseDto {
     return this._nom;
   }
 
-  public get eleveList() {
-    return this._elevelList;
+  public get elevesList() {
+    return this._elevesList;
   }
 
-  public get salleList() {
-    return this._salleList;
+  public get professeursList() {
+    return this._professeursList;
+  }
+
+  public get sallesList() {
+    return this._sallesList;
   }
 
   public set id(id: String) {
@@ -37,13 +42,18 @@ class ClasseDto {
     this._nom = nom;
   }
 
-  public set eleveList(eleveList: String[]) {
-    this._elevelList = eleveList;
+  public set elevesList(eleveList: String[]) {
+    this._elevesList = eleveList;
   }
 
-  public set salleList(salleList: String[]) {
-    this._salleList = salleList;
+  public set professeursList(professeursList: String[]) {
+    this._professeursList = professeursList;
   }
+
+  public set sallesList(salleList: String[]) {
+    this._sallesList = salleList;
+  } 
+  */
 }
 
 export default ClasseDto;
